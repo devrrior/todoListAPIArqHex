@@ -1,0 +1,28 @@
+### Update task by id
+PUT http://localhost:3000/api/tasks/a0e3e4c1-4f5f-4e0a-8f5d-8e3f0c4e0a4f
+Content-Type: application/json
+
+{
+  "content": "Buy milk",
+  "done": true
+}
+
+### Get task by id
+GET http://localhost:3000/api/tasks/a0e3e4c1-4f5f-4e0a-8f5d-8e3f0c4e0a4f
+Accept: application/json
+
+### Create task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "content": "Buy eggs"
+}
+
+#### List tasks
+GET http://localhost:3000/api/tasks
+Accept: application/json
+
+### Delete task
+DELETE http://localhost:3000/api/tasks/98d056ac-83ac-4d44-a31b-89a3ac54857e
+Accept: application/json
